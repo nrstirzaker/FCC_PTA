@@ -1,0 +1,26 @@
+{
+  "name": "f_o_r",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrstirzaker/f_o_r.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nrstirzaker/f_o_r/issues"
+  },
+  "homepage": "https://github.com/nrstirzaker/f_o_r#readme",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "hapi": "^16.6.2",
+    "inert": "^4.2.1",
+    "pg": "7.3.0"
+  }
+}
