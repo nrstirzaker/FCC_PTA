@@ -1,0 +1,33 @@
+$(document).ready(function () {
+
+    $("button").click(function () {
+        var memberObj = {};
+        memberObj.name = $("input[name=fullName]").val();
+        memberObj.email = $("input[name=email]").val();
+        memberObj.childYr = $("input[name=childYr]").val();
+        memberObj.commitee = $("input[name=committee]").val();
+        memberObj.helper = $("input[name=helper]").val();
+
+        var member = JSON.stringify(memberObj);
+
+        console.log('member:' + member);
+        $.ajax({
+            url: "http://localhost:8081/api/member",
+            type: 'POST',
+            data: member,
+            //contentType: "application/x-www-form-urlencoded",
+            contentType: 'application/json',
+            dataType: "json",
+            crossDomain: true,
+            success: function (dadata, textStatus, jQxhrta) {
+                $('#message').html('Information Saved');
+                console.log('information saved');
+            },
+            error: function (data, textStatus, jQxhr) {
+                $('#message').html('Information NOT Saved');
+                console.log('information NOT saved')
+            }
+        })
+    });
+
+});

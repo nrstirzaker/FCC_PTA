@@ -1,0 +1,45 @@
+
+
+    <div class="container-fluid">
+        <h1>We are Friend's of Christ's College PTA 1</h1>
+        <p>We are the Parent/Teacher association of Christ's College Guildford</p>
+        <p>Please register below if you can help, Thanks</p>
+        <div id="message">{{message}}</div>
+        <header>
+            
+        </header>
+        <form action="/api/member" method="POST">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" name='fullName' class="form-control" id="fullName">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" name='email' class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="childYr">School year of Youngest Child:</label>
+                <span><select name="childYr" id="childYr">
+                        <option value="Pre">Reception,Yr1-Yr6</option>
+                        <option value="7">Yr 7</option>
+                        <option value="8">Yr 8</option>
+                        <option value="9">Yr 9</option>
+                        <option value="10">Yr 10</option>
+                        <option value="11">Yr 11</option>
+                        <option value="12">Yr 12</option>
+                        <option value="13">Yr 13</option>
+                    </select> We will automatically remove you when your last child finished Yr 13</span>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="commitee" value="committee">I would like to be on the commitee<br></label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="helper" value="helper">I would like to help at events<br></label>
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <footer>
+
+        </footer>
+    </div>

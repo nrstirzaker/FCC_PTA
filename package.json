@@ -1,26 +1,37 @@
 {
-  "name": "f_o_r",
+  "name": "fcc_pta",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "\"# FCC_PTA\"",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.12",
+    "http-errors": "~1.6.2",
+    "mongodb": "^3.1.8",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node bin/start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nrstirzaker/f_o_r.git"
+    "url": "git+https://github.com/nrstirzaker/FCC_PTA.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nrstirzaker/f_o_r/issues"
+    "url": "https://github.com/nrstirzaker/FCC_PTA/issues"
   },
-  "homepage": "https://github.com/nrstirzaker/f_o_r#readme",
-  "dependencies": {
-    "crypto-js": "^3.1.9-1",
-    "hapi": "^16.6.2",
-    "inert": "^4.2.1",
-    "pg": "7.3.0"
-  }
+  "homepage": "https://github.com/nrstirzaker/FCC_PTA#readme"
 }
